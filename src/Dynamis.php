@@ -27,6 +27,7 @@ class Dynamis implements IteratorAggregate, DynamisInterface
     {
         if ($iterator instanceof Traversable) {
             $this->iterator = $iterator;
+            return;
         }
 
         $this->iterator = new ArrayObject($iterator);
