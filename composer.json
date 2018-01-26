@@ -1,6 +1,7 @@
 {
     "name": "pernicat/dynamis",
     "description": "An iterable wrapper that returns generators",
+    "keywords": ["traversable", "generator", "dynamis"],
     "type": "library",
     "license": "MIT",
     "authors": [
