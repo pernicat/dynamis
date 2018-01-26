@@ -120,4 +120,13 @@ class DynamisTest extends TestCase
             $this->assertEquals(self::CSV[$key + 1][1], $row['name']);
         }
     }
+
+    public function testEach()
+    {
+        $dynamis = Dynamis::createFrom(self::ARRAY);
+
+        $dynamis->each(function ($value) {
+            $this->assertTrue(in_array($value, self::ARRAY));
+        });
+    }
 }
